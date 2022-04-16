@@ -10,7 +10,8 @@
     "permissions": [
         "declarativeNetRequest",
         "declarativeNetRequestFeedback",
-        "storage"
+        "storage",
+        "tabs"
     ],
 
     "background": {
