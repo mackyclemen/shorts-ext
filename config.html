@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <style>
+
+        html, body {
+            width: 15rem;
+        }
+
+        /* toggle switch from https://www.w3schools.com/howto/howto_css_switch.asp */
+        .switch {
+            position: relative;
+            display: inline-block;
+            width: 32px;
+            height: 20px;
+        }
+
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #9c0000;
+        }
+
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 12px;
+            width: 12px;
+            left: 4px;
+            bottom: 4px;
+            background-color: white;
+        }
+
+        input:checked+.slider {
+            background-color: #00a500;
+        }
+
+        input:checked+.slider:before {
+            transform: translateX(12px);
+        }
+
+        label.text {
+            padding-left: 0.5rem;
+            cursor: pointer;
+        }
+
+        div.cell {
+            padding: 0.5rem;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        p {
+            padding: 0;
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="cell">
+        <label for="enable_shorts_redirect" class="switch">
+            <input type="checkbox" id="enable_shorts_redirect" />
+            <span class="slider"> </span>
+        </label>
+        <label class="text" for="enable_shorts_redirect">Enable Shorts Redirect</label>
+    </div>
+
+    <div class="cell">
+        <p>created by <a href="https://github.com/mackyclemen" target="_blank">@mackyclemen</a></p>
+    </div>
+
+    <script src="config.js"></script>
+</body>
+
+</html>

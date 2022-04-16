@@ -9,8 +9,24 @@
 
     "permissions": [
         "declarativeNetRequest",
-        "declarativeNetRequestFeedback"
+        "declarativeNetRequestFeedback",
+        "storage"
     ],
+
+    "background": {
+        "service_worker": "main.js"
+    },
+
+    "action": {
+        "default_popup": "config.html",
+        "default_icon": {
+            "16": "icons/icon_16.png",
+            "32": "icons/icon_32.png",
+            "48": "icons/icon_48.png",
+            "64": "icons/icon_64.png",
+            "128": "icons/icon_128.png"
+        }
+    },
 
     "declarative_net_request": {
         "rule_resources": [{
