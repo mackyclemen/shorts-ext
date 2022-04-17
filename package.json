@@ -1,0 +1,21 @@
+{
+  "name": "shorts-ext",
+  "version": "1.0.1",
+  "description": "Converts YouTube Shorts URLs to normal YouTube Video Players",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mackyclemen/shorts-ext.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mackyclemen/shorts-ext/issues"
+  },
+  "homepage": "https://github.com/mackyclemen/shorts-ext#readme",
+  "devDependencies": {
+    "@types/chrome": "^0.0.181"
+  }
+}
