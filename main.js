@@ -8,7 +8,6 @@ chrome.runtime.onInstalled.addListener((details) => {
 
 // watch for changes and apply accordingly
 chrome.storage.onChanged.addListener((changes, area) => {
-    console.log("storage changed", changes, area);
     if (area === 'local') {
         if(changes.enable.newValue) {
             chrome.declarativeNetRequest.updateEnabledRulesets({
